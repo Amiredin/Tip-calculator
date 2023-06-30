@@ -1,0 +1,157 @@
+:root {
+  --Strong-cyan: hsl(172, 67%, 45%);
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  background-color: var(--Light-grayish-cyan);
+}
+.container {
+  max-width: 60%;
+  margin: 5rem auto;
+}
+
+.logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.main {
+  background-color: var(--White);
+  padding: 2rem;
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+  border-radius: 15px;
+}
+
+.main__left {
+  width: 100%;
+}
+
+.main__left h3,
+.error-message {
+  margin-bottom: 10px;
+  font-size: large;
+}
+.title {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.error-message {
+  color: red;
+  display: none;
+}
+
+.main-input {
+  background-color: var(--Very-light-grayish-cyan);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.main-input img {
+  margin-left: 10px;
+}
+
+.main-input input {
+  background-color: inherit;
+  width: 80%;
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+.tips {
+  margin: 15px 0;
+}
+
+.tips-btn {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tips-btn button,
+.tips-btn input {
+  font: inherit;
+  font-size: large;
+  width: 27%;
+  background-color: var(--Very-dark-cyan);
+  color: var(--White);
+  border-radius: 10px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.tips-btn input {
+  background-color: var(--Very-light-grayish-cyan);
+  color: var(--Very-dark-cyan);
+  text-align: center;
+}
+
+.main__rigth {
+  background-color: var(--Very-dark-cyan);
+  padding: 2rem;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.main__rigth-top,
+.main__rigth-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.main__rigth-description {
+  font-size: medium;
+  color: var(--White);
+}
+
+.main__rigth-description span {
+  color: var(--Grayish-cyan);
+}
+
+.tip-amount,
+.total-amount {
+  font-size: xx-large;
+  color: var(--Strong-cyan);
+}
+
+.main__rigth button {
+  width: 100%;
+  font: inherit;
+  background-color: var(--Dark-grayish-cyan);
+  color: var(--Strong-cyan);
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 100%;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+}
